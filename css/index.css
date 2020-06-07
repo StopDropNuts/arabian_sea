@@ -5,3 +5,14 @@
     background-position: center;
     opacity: 0.82;
 }
+#header-textbox .bg-wrap {
+    background-color: #111;
+}
+
+#header-textbox .bg {
+    background-image: url('../images/bg-71.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity:0.4;
+}
