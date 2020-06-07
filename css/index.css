@@ -1,7 +1,7 @@
 #header-search-2 .bg {
-    background-image: url('../images/bg-pattern-1-primary.png');
-    background-repeat: repeat;
+	background-size: cover;
+    background-image: url('../images/sardiniya10.jpg');
+    background-repeat: No-repeat;
     background-position: center;
-    background-size: 200px 200px;
-    opacity:0.2;
+    opacity: 0.82;
 }

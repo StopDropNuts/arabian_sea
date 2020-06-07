@@ -20,26 +20,26 @@ var cleanOpts = [{"featureType":"administrative","elementType":"labels.text.fill
 
 var nightOpts = [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"color":"#000000"},{"lightness":13}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#144b53"},{"lightness":14},{"weight":1.4}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#08304b"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#0c4152"},{"lightness":5}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#0b434f"},{"lightness":25}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#0b3d51"},{"lightness":16}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"}]},{"featureType":"transit","elementType":"all","stylers":[{"color":"#146474"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#021019"}]}];
 
-function initialize_contact_map_map() {
+function initialize_contact_map_map__1() {
 
     var map;
     var MY_MAPTYPE_ID = 'custom_style';
 
     var mapOptions = {
-        zoom: 5,
+        zoom: 14,
         scrollwheel: false,
         //draggable: false,
         panControl: false,
         mapTypeControl: false,
         streetViewControl: false,
-        center: new google.maps.LatLng(18.592971,  65.001699),
+        center: new google.maps.LatLng(40.748659, -73.985705),
         mapTypeControlOptions: {
             mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
         },
         mapTypeId: MY_MAPTYPE_ID
     };
 
-    map = new google.maps.Map(document.getElementById('contact-map-map'), mapOptions);
+    map = new google.maps.Map(document.getElementById('contact-map-map--1'), mapOptions);
 
     var contentString = '<div id="content"> Address <br> Phone <br> Work Hours</div>';
 
@@ -48,7 +48,7 @@ function initialize_contact_map_map() {
     });
 
 
-    var myLatLng = new google.maps.LatLng(18.592971,  65.001699);
+    var myLatLng = new google.maps.LatLng(40.748659, -73.985705);
     var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
@@ -63,17 +63,17 @@ function initialize_contact_map_map() {
         name: 'Custom Style'
     };
 
-    var customMapType = new google.maps.StyledMapType(appleOpts, styledMapOptions);
+    var customMapType = new google.maps.StyledMapType(dreamOpts, styledMapOptions);
 
     map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
 
 }
 
 if (window.google)
-    initialize_contact_map_map();
+    initialize_contact_map_map__1();
 
 document.addEventListener('cookie.accepted', function () {
-    initialize_contact_map_map();
+    initialize_contact_map_map__1();
 });
 
 });
