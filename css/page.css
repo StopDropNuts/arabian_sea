@@ -5,3 +5,12 @@
     background-size: cover;
     opacity: 0.82;
 }
+
+#text-2col-2--0 .bg-wrap {
+	background: #11607b;
+}
+#text-2col-2--2 .bg-wrap {
+	background: #11607b;
+}#desc-img-list-3col .bg-wrap {
+    background-color: #f4f5f6;
+}
