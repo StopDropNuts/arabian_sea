@@ -1,0 +1,24 @@
+
+#header-search-2 .bg {
+	background-size: cover;
+	opacity: 0.82;
+	background-image: url('../images/sardiniya10.jpg');
+}#desc-img-list-3col .bg-wrap {
+    background-color: #f4f5f6;
+}#desc-img-list-3col--0 .bg-wrap {
+    background-color: #f4f5f6;
+}
+#text-2col-2--2 .bg-wrap {
+	background: #155c74;
+}#desc-img-list-3col .bg-wrap {
+    background-color: #f4f5f6;
+}#desc-text-img-7 .bg-wrap {
+    background-color: #222;
+}
+#header-modal-text .bg {
+    background-image: url('../images/bg-83.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity:1;
+}
